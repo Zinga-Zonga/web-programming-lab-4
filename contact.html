@@ -1,0 +1,295 @@
+<!doctype html>
+<html id="previewPage" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Affan - PWA Mobile HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0134d4">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <!-- Title -->
+  <title>Affan - PWA Mobile HTML Template</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="img/core-img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/icons/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/icons/icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/icon-180x180.png">
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/tiny-slider.css">
+  <link rel="stylesheet" href="css/baguetteBox.min.css">
+  <link rel="stylesheet" href="css/rangeslider.css">
+  <link rel="stylesheet" href="css/vanilla-dataTables.min.css">
+  <link rel="stylesheet" href="css/apexcharts.css">
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+<!-- Dark mode switching -->
+<div class="dark-mode-switching">
+  <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+    <div class="dark-mode-text text-center">
+      <svg class="bi bi-moon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+           viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z"></path>
+      </svg>
+      <p class="mb-0">Switching to dark mode</p>
+    </div>
+    <div class="light-mode-text text-center">
+      <svg class="bi bi-brightness-high" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+           fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+      </svg>
+      <p class="mb-0">Switching to light mode</p>
+    </div>
+  </div>
+</div>
+<!-- RTL mode switching -->
+<div class="rtl-mode-switching">
+  <div class="d-flex w-100 h-100 align-items-center justify-content-center">
+    <div class="rtl-mode-text text-center">
+      <svg class="bi bi-text-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+           fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+      </svg>
+      <p class="mb-0">Switching to RTL mode</p>
+    </div>
+    <div class="ltr-mode-text text-center">
+      <svg class="bi bi-text-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+           fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+              d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+      </svg>
+      <p class="mb-0">Switching to default mode</p>
+    </div>
+  </div>
+</div>
+<!-- Setting Popup Overlay -->
+<div id="setting-popup-overlay"></div>
+<!-- Setting Popup Card -->
+<div class="card setting-popup-card shadow-lg" id="settingCard">
+  <div class="card-body">
+    <div class="container">
+      <div class="setting-heading d-flex align-items-center justify-content-between mb-3">
+        <p class="mb-0">Settings</p>
+        <div class="btn-close" id="settingCardClose"></div>
+      </div>
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="availabilityStatus" checked>
+          <label class="form-check-label" for="availabilityStatus">Availability status</label>
+        </div>
+      </div>
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="sendMeNotifications" checked>
+          <label class="form-check-label" for="sendMeNotifications">Send me notifications</label>
+        </div>
+      </div>
+      <div class="single-setting-panel">
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" id="darkSwitch1">
+          <label class="form-check-label" for="darkSwitch">Dark mode</label>
+        </div>
+      </div>
+      <div class="single-setting-panel">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="rtlSwitch">
+          <label class="form-check-label" for="rtlSwitch">RTL mode</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1"
+     aria-labelledby="affanOffcanvsLabel" style="visibility: hidden;" aria-hidden="true">
+  <button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+  <div class="offcanvas-body p-0">
+    <!-- Side Nav Wrapper -->
+    <div class="sidenav-wrapper">
+      <!-- Sidenav Profile -->
+      <div class="sidenav-profile bg-gradient">
+        <div class="sidenav-style1"></div>
+        <!-- User Thumbnail -->
+        <div class="user-profile"><img src="img/team1.png" alt=""></div>
+        <!-- User Info -->
+        <div class="user-info">
+          <h6 class="user-name mb-0">Пользователь</h6><span>Описание пользователя</span>
+        </div>
+      </div>
+      <!-- Sidenav Nav -->
+      <ul class="sidenav-nav ps-0">
+        <li><a href="index.html"><i class="bi bi-house-door"></i>Home</a></li>
+        <li><a href="our-team.html"><i class="bi bi-people"></i>Our Team</a></li>
+        <li><a href="coming-soon.html"><i class="bi bi-clock"></i>Comming Soon</a></li>
+        <li><a href="shop.html" class="nav-url"><i class="bi bi-cart-check"></i>Shop</a></li>
+        <ul>
+          <li><a href="shop.html">Shop List</a></li>
+          <li><a href="shop-details.html">Shop Details</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="invoive.html">Checkout</a></li>
+        </ul>
+        </li>
+        <li>
+          <div class="night-mode-nav"><i class="bi bi-moon"></i>Night Mode
+            <div class="form-check form-switch">
+              <input class="form-check-input form-check-success" id="darkSwitch" type="checkbox">
+            </div>
+          </div>
+        </li>
+        <li><a href="#"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+      </ul>
+      <!-- Social Info -->
+      <div class="social-info-wrap"><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i
+              class="bi bi-twitter"></i></a><a href="#"><i class="bi bi-linkedin"></i></a></div>
+      <!-- Copyright Info -->
+      <div class="copyright-info">
+        <p>2022 © Made by<a href="#">ZingaZonga</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<header>
+  <div class="mt-2 mb-2 container">
+    <nav>
+      <div class="header-content position-relative d-flex align-items-center justify-content-between">
+        <!-- Navbar Toggler -->
+        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas"
+             data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas"><span class="d-block"></span><span
+                class="d-block"></span><span class="d-block"></span></div>
+        <!-- Logo Wrapper -->
+        <div class="logo-wrapper-"><a href="index.html"><img style="max-height: 80px;" src="img/logo.png" alt=""></a></div>
+        <!-- Settings -->
+        <div class="setting-wrapper">
+          <div class="setting-trigger-btn" id="settingTriggerBtn">
+            <svg class="bi bi-gear" width="18" height="18" viewBox="0 0 16 16" fill="url(#gradientSettings)"
+                 xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="gradientSettings" spreadMethod="pad" x1="0%" y1="0%" x2="100%"
+                                y2="100%">
+                  <stop offset="0" style="stop-color: #0134d4; stop-opacity:1;"></stop>
+                  <stop offset="100%" style="stop-color: #28a745; stop-opacity:1;"></stop>
+                </linearGradient>
+              </defs>
+              <path fill-rule="evenodd"
+                    d="M8.837 1.626c-.246-.835-1.428-.835-1.674 0l-.094.319A1.873 1.873 0 0 1 4.377 3.06l-.292-.16c-.764-.415-1.6.42-1.184 1.185l.159.292a1.873 1.873 0 0 1-1.115 2.692l-.319.094c-.835.246-.835 1.428 0 1.674l.319.094a1.873 1.873 0 0 1 1.115 2.693l-.16.291c-.415.764.42 1.6 1.185 1.184l.292-.159a1.873 1.873 0 0 1 2.692 1.116l.094.318c.246.835 1.428.835 1.674 0l.094-.319a1.873 1.873 0 0 1 2.693-1.115l.291.16c.764.415 1.6-.42 1.184-1.185l-.159-.291a1.873 1.873 0 0 1 1.116-2.693l.318-.094c.835-.246.835-1.428 0-1.674l-.319-.094a1.873 1.873 0 0 1-1.115-2.692l.16-.292c.415-.764-.42-1.6-1.185-1.184l-.291.159A1.873 1.873 0 0 1 8.93 1.945l-.094-.319zm-2.633-.283c.527-1.79 3.065-1.79 3.592 0l.094.319a.873.873 0 0 0 1.255.52l.292-.16c1.64-.892 3.434.901 2.54 2.541l-.159.292a.873.873 0 0 0 .52 1.255l.319.094c1.79.527 1.79 3.065 0 3.592l-.319.094a.873.873 0 0 0-.52 1.255l.16.292c.893 1.64-.902 3.434-2.541 2.54l-.292-.159a.873.873 0 0 0-1.255.52l-.094.319c-.527 1.79-3.065 1.79-3.592 0l-.094-.319a.873.873 0 0 0-1.255-.52l-.292.16c-1.64.893-3.433-.902-2.54-2.541l.159-.292a.873.873 0 0 0-.52-1.255l-.319-.094c-1.79-.527-1.79-3.065 0-3.592l.319-.094a.873.873 0 0 0 .52-1.255l-.16-.292c-.892-1.64.902-3.433 2.541-2.54l.292.159a.873.873 0 0 0 1.255-.52l.094-.319z"></path>
+              <path fill-rule="evenodd"
+                    d="M8 5.754a2.246 2.246 0 1 0 0 4.492 2.246 2.246 0 0 0 0-4.492zM4.754 8a3.246 3.246 0 1 1 6.492 0 3.246 3.246 0 0 1-6.492 0z"></path>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="page-content-wrapper py-3 mt-0" >
+    <div class="container">
+        <!-- Contact Form -->
+        <div class="card mb-1">
+          <div class="card-body">
+            <h5 class="mb-3">Свяжитесь с нами</h5>
+            <div class="contact-form">
+              <form action="#">
+                <div class="form-group mb-3">
+                  <input class="form-control" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-group mb-3">
+                  <input class="form-control" type="email" placeholder="Введите почту">
+                </div>
+                <div class="form-group mb-3">
+                  <select class="form-select form-control-clicked" name="topic">
+                    <option value="">Помощь продавцу</option>
+                    <option value="">Помощь покупателю</option>
+                    <option value="">Лицензии</option>
+                  </select>
+                </div>
+                <div class="form-group mb-3">
+						<textarea class="form-control" name="textarea" cols="30" rows="10"
+                                  placeholder="Описание"></textarea>
+                </div>
+                <button class="btn btn-primary w-100">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Google Maps -->
+      <div class="card">
+        <div class="card-body">
+          <div class="google-maps">
+            <h5 class="mb-3 mt-0">Our office location</h5>
+            <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2704.3292879145024!2d39.68254301527524!3d47.32744007916707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3c85659cb5eed%3A0x2d337baf13bee523!2sPereulok%20Belousova%2C%2018%2C%20Rostov%2C%20Rostovskaya%20oblast&#39;%2C%20Russia%2C%20344064!5e0!3m2!1sen!2sbd!4v1667420292369!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer-nav  position-fixed bottom-0 footer-style-five shadow-sm" style="z-index: 99;">
+    <div class="container h-100">
+      <ul class="h-100 d-flex ps-0">
+        <li><a href="index.html">
+          <svg class="bi bi-house" width="24" height="24" viewBox="0 0 16 16" fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
+            <path fill-rule="evenodd"
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"></path>
+          </svg>
+        </a></li>
+        <li><a href="shop.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+            <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>
+        </a></li>
+        <li><a href="cart.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+        </a></li>
+        <li  class="active"><a href="contact.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+          </svg>
+        </a></li>
+      </ul>
+
+    </div>
+  </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/slideToggle.min.js"></script>
+<script src="js/internet-status.js"></script>
+<script src="js/tiny-slider.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script src="js/vanilla-dataTables.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/magic-grid.min.js"></script>
+<script src="js/dark-rtl.js"></script>
+<script src="js/active.js"></script>
+<!-- PWA -->
+<script src="js/pwa.js"></script>
+</body>
+</html>
